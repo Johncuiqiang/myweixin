@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+    <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:orientation="horizontal">
+    <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:hint="你想搜什么？"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="16sp" />
+        <Button   android:layout_width="0dp"
+                  android:layout_weight="0.3"
+                  android:layout_height="25dp"
+                  android:text="确定"
+                  android:layout_marginRight="5dp"
+                  android:background="@drawable/shape_bt"
+                  android:textColor="#000"
+                  android:textSize="16sp"
+                  android:id="@+id/bt_search"
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/ll_search"
+                  android:id="@+id/ll_route"
+                  android:background="#49000000"
+                  android:orientation="horizontal">
+        <EditText
+                android:id="@+id/et_city"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:hint="城市"
+                android:background="@null"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="16sp" />
+        <EditText
+                android:id="@+id/et_start"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:hint="起点"
+                android:background="@null"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="16sp" />
+        <EditText
+                android:id="@+id/et_end"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:hint="终点"
+                android:background="@null"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="16sp" />
+        <Button   android:layout_width="0dp"
+                  android:layout_weight="0.9"
+                  android:layout_height="25dp"
+                  android:text="确定"
+                  android:layout_marginRight="5dp"
+                  android:background="@drawable/shape_bt"
+                  android:textColor="#000"
+                  android:textSize="16sp"
+                  android:id="@+id/bt_route"
+        />
+    </LinearLayout>
+</RelativeLayout>

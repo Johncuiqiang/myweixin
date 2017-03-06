@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:clickable="true"
+             android:orientation="vertical"
+             android:padding="55dp" >
+    <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_userdialog"
+            android:orientation="vertical" >
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="提示框"
+                android:textColor="@color/biztrip_title_color"
+                android:visibility="visible" />
+       <!-- <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/biztrip_title_color" />-->
+        <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+
+            <TextView
+                    android:id="@+id/message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="自定义提示框"
+                    android:textColor="@color/black_color_g"
+                    android:minHeight="80.0dip"
+                    android:paddingBottom="10.0dip"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:paddingTop="10.0dip" />
+        </LinearLayout>
+
+        <!--<View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ffd0d0d0" />-->
+
+        <RelativeLayout
+                android:id="@+id/ll_bt"
+                android:layout_width="210dp"
+                android:layout_height="50.0dip"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+            <Button
+                    android:id="@+id/positiveButton"
+                    android:layout_width="80.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/change_psw_confirm"
+                    android:textColor="@color/biztrip_title_color"
+                    android:text="确定" />
+
+            <Button
+                    android:id="@+id/negativeButton"
+                    android:layout_width="80.0dip"
+                    android:layout_height="27.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp"
+                    android:background="@drawable/change_psw_cancer"
+                    android:textColor="@color/black_color_g"
+                    android:text="取消" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

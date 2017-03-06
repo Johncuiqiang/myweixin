@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Common1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/assets/Common.zip!/" />
+      <root url="jar://$PROJECT_DIR$/assets/Empty.zip!/" />
+      <root url="jar://$PROJECT_DIR$/assets/FilterAssets.zip!/" />
+      <root url="jar://$PROJECT_DIR$/assets/MusicAssets.zip!/" />
+      <root url="jar://$PROJECT_DIR$/assets/MusicVideoAssets.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

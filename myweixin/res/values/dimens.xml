@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--通用-->
+    <dimen name="head_height">48dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="title_height">60dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+
+    <!--    字体大小型号   -->
+    <!-- 超小标题字号 -->
+    <dimen name="font_ten">10sp</dimen>
+    <!-- 很小标题字号 -->
+    <dimen name="font_twelve">12sp</dimen>
+    <!-- 小标题字号 -->
+    <dimen name="font_fourteen">14sp</dimen>
+    <!-- 中标题字号 -->
+    <dimen name="font_Sixteen">16sp</dimen>
+    <!-- 大标题字号 -->
+    <dimen name="font_Eighteen">18sp</dimen>
+    <!-- 超大标题字号 -->
+    <dimen name="font_Twenty">20sp</dimen>
+    <!-- 特大标题字号 -->
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="font_TwentyFour">24sp</dimen>
+
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="si_default_text_size">18sp</dimen>
+    <dimen name="si_default_radius_max">24dp</dimen>
+    <dimen name="si_default_radius_min">8dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

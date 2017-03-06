@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/main"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:background="#bcbcbc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <Button android:layout_width="150dp"
+            android:id="@+id/bt_share"
+            android:layout_centerHorizontal="true"
+            android:text="分享"
+            android:layout_height="50dp"/>
+    <Button android:layout_width="150dp"
+            android:layout_below="@+id/bt_share"
+            android:id="@+id/bt_hide"
+            android:layout_centerHorizontal="true"
+            android:text="取消"
+            android:layout_height="50dp"/>
+    <Button android:layout_width="150dp"
+            android:layout_below="@+id/bt_hide"
+            android:id="@+id/bt_share_new"
+            android:layout_centerHorizontal="true"
+            android:text="分享升级版"
+            android:layout_height="50dp"/>
+    <FrameLayout
+            android:background="@android:color/white"
+            android:visibility="gone"
+            android:id="@+id/fl_up_menu"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        <GridView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/gv_share"
+                  android:numColumns="4">
+        </GridView>
+    </FrameLayout>
+</RelativeLayout>

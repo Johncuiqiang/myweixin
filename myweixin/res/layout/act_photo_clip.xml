@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.yzh.weixin.photo.ClipImageView
+        android:id="@+id/src_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.yzh.weixin.photo.ClipView
+        android:id="@+id/clipview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/btn_clip_cancel"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/photo_ok2"
+        android:drawableLeft="@drawable/ic_crop_cancel_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:text="取消"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/btn_clip_submit"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/photo_ok2"
+        android:gravity="center"
+        android:paddingTop="2dip"
+        android:text="确定"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

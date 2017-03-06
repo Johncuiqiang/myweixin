@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#A9B0B5"
+            android:textSize="14sp"
+            android:text="测试"/>
+    <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A9B0B5"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:text="退出登录"/>
+    <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="测试"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"/>
+    <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next"
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>
+</LinearLayout>

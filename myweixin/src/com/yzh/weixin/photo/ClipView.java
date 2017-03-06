@@ -1,0 +1,66 @@
+package com.yzh.weixin.photo;
+
+import android.content.Context;
+import android.graphics.*;
+import android.graphics.PorterDuff.Mode;
+import android.util.AttributeSet;
+import android.view.View;
+
+/**
+ * 裁剪边框
+ * 
+ * @time 2014-6-18 下午3:53:00
+ */
+public class ClipView extends View {
+	private static final int LAYER_FLAGS = Canvas.MATRIX_SAVE_FLAG | Canvas.CLIP_SAVE_FLAG | Canvas.HAS_ALPHA_LAYER_SAVE_FLAG
+			| Canvas.FULL_COLOR_LAYER_SAVE_FLAG | Canvas.CLIP_TO_LAYER_SAVE_FLAG;
+
+	/**
+	 * 边框距左右边界距离，用于调整边框长度
+	 */
+	public static final int BORDERDISTANCE = 20;
+
+	private Paint mPaint;
+	private Paint mMaskPaint;
+
+	public ClipView(Context context) {
+		this(context, null);
+	}
+
+	public ClipView(Context context, AttributeSet attrs) {
+		this(context, attrs, 0);
+	}
+
+	public ClipView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		mPaint = new Paint();
+		mMaskPaint = new Paint();
+	}
+
+	@Override
+	protected void onDraw(Canvas canvas) {
+		super.onDraw(canvas);
+		int width = this.getWidth();
+		int height = this.getHeight();
+
+		// 边框长度，据屏幕左右边缘50px
+		int borderlength = width - BORDERDISTANCE * 2;
+
+		int count = canvas.saveLayer(new RectF(new Rect(0, 0, width, height)), null, LAYER_FLAGS);
+		// 以下绘制透明暗色区域
+		mPaint.setColor(0xaa000000);
+		canvas.drawRect(0, 0, width, height, mPaint);
+
+		// 以下绘制圆形边框线
+		mPaint.setColor(Color.WHITE);
+		mPaint.setAntiAlias(true);
+
+		canvas.drawCircle(width / 2, height / 2, borderlength / 2, mPaint);
+		mMaskPaint.setColor(Color.WHITE);
+		mMaskPaint.setAntiAlias(true);
+		mMaskPaint.setXfermode(new PorterDuffXfermode(Mode.DST_OUT));
+		canvas.drawCircle(width / 2, height / 2, borderlength / 2 - 1, mMaskPaint);
+
+		canvas.restoreToCount(count);
+	}
+}

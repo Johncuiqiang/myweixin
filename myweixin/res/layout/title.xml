@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/ll_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/biztrip_title_color"
+      android:orientation="horizontal">
+<ImageView
+      android:id="@+id/toolbar_icon"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+<TextView
+      android:id="@+id/toolbar_tv"
+      android:layout_centerVertical="true"
+      android:layout_toRightOf="@+id/toolbar_icon"
+      android:layout_marginLeft="5dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="微信"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"/>
+</RelativeLayout>
